@@ -16,5 +16,10 @@ namespace number_baseball_game
         {
             InitializeComponent();
         }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
