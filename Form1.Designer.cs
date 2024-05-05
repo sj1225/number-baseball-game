@@ -28,117 +28,121 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.textBox4 = new System.Windows.Forms.TextBox();
-            this.btnInput = new System.Windows.Forms.Button();
-            this.btnClear = new System.Windows.Forms.Button();
-            this.divider = new System.Windows.Forms.Label();
+            this.TextBox1 = new System.Windows.Forms.TextBox();
+            this.TextBox2 = new System.Windows.Forms.TextBox();
+            this.TextBox3 = new System.Windows.Forms.TextBox();
+            this.TextBox4 = new System.Windows.Forms.TextBox();
+            this.ButtonInput = new System.Windows.Forms.Button();
+            this.ButtonClear = new System.Windows.Forms.Button();
+            this.Divider = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
-            // textBox1
+            // TextBox1
             // 
-            this.textBox1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            this.TextBox1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.textBox1.Font = new System.Drawing.Font("굴림", 33F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))));
-            this.textBox1.Location = new System.Drawing.Point(36, 20);
-            this.textBox1.Margin = new System.Windows.Forms.Padding(1);
-            this.textBox1.MaxLength = 1;
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(50, 58);
-            this.textBox1.TabIndex = 0;
-            this.textBox1.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.TextBox1.Font = new System.Drawing.Font("굴림", 33F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))));
+            this.TextBox1.Location = new System.Drawing.Point(36, 20);
+            this.TextBox1.Margin = new System.Windows.Forms.Padding(1);
+            this.TextBox1.MaxLength = 1;
+            this.TextBox1.Name = "TextBox1";
+            this.TextBox1.Size = new System.Drawing.Size(50, 58);
+            this.TextBox1.TabIndex = 0;
+            this.TextBox1.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.TextBox1.TextChanged += new System.EventHandler(this.TextBox1_TextChanged);
             // 
-            // textBox2
+            // TextBox2
             // 
-            this.textBox2.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            this.TextBox2.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.textBox2.Font = new System.Drawing.Font("굴림", 33F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))));
-            this.textBox2.Location = new System.Drawing.Point(97, 20);
-            this.textBox2.Margin = new System.Windows.Forms.Padding(1);
-            this.textBox2.MaxLength = 1;
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(50, 58);
-            this.textBox2.TabIndex = 1;
-            this.textBox2.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.TextBox2.Font = new System.Drawing.Font("굴림", 33F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))));
+            this.TextBox2.Location = new System.Drawing.Point(97, 20);
+            this.TextBox2.Margin = new System.Windows.Forms.Padding(1);
+            this.TextBox2.MaxLength = 1;
+            this.TextBox2.Name = "TextBox2";
+            this.TextBox2.Size = new System.Drawing.Size(50, 58);
+            this.TextBox2.TabIndex = 1;
+            this.TextBox2.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.TextBox2.TextChanged += new System.EventHandler(this.TextBox2_TextChanged);
             // 
-            // textBox3
+            // TextBox3
             // 
-            this.textBox3.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            this.TextBox3.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.textBox3.Font = new System.Drawing.Font("굴림", 33F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))));
-            this.textBox3.Location = new System.Drawing.Point(158, 20);
-            this.textBox3.Margin = new System.Windows.Forms.Padding(1);
-            this.textBox3.MaxLength = 1;
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(50, 58);
-            this.textBox3.TabIndex = 2;
-            this.textBox3.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.TextBox3.Font = new System.Drawing.Font("굴림", 33F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))));
+            this.TextBox3.Location = new System.Drawing.Point(158, 20);
+            this.TextBox3.Margin = new System.Windows.Forms.Padding(1);
+            this.TextBox3.MaxLength = 1;
+            this.TextBox3.Name = "TextBox3";
+            this.TextBox3.Size = new System.Drawing.Size(50, 58);
+            this.TextBox3.TabIndex = 2;
+            this.TextBox3.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.TextBox3.TextChanged += new System.EventHandler(this.TextBox3_TextChanged);
             // 
-            // textBox4
+            // TextBox4
             // 
-            this.textBox4.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            this.TextBox4.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.textBox4.Font = new System.Drawing.Font("굴림", 33F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))));
-            this.textBox4.Location = new System.Drawing.Point(219, 20);
-            this.textBox4.Margin = new System.Windows.Forms.Padding(1);
-            this.textBox4.MaxLength = 1;
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(50, 58);
-            this.textBox4.TabIndex = 3;
-            this.textBox4.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.TextBox4.Font = new System.Drawing.Font("굴림", 33F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))));
+            this.TextBox4.Location = new System.Drawing.Point(219, 20);
+            this.TextBox4.Margin = new System.Windows.Forms.Padding(1);
+            this.TextBox4.MaxLength = 1;
+            this.TextBox4.Name = "TextBox4";
+            this.TextBox4.Size = new System.Drawing.Size(50, 58);
+            this.TextBox4.TabIndex = 3;
+            this.TextBox4.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.TextBox4.TextChanged += new System.EventHandler(this.TextBox4_TextChanged);
             // 
-            // btnInput
+            // ButtonInput
             // 
-            this.btnInput.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            this.ButtonInput.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnInput.Font = new System.Drawing.Font("굴림", 16F);
-            this.btnInput.Location = new System.Drawing.Point(282, 20);
-            this.btnInput.Name = "btnInput";
-            this.btnInput.Size = new System.Drawing.Size(70, 58);
-            this.btnInput.TabIndex = 4;
-            this.btnInput.Text = "입력";
-            this.btnInput.UseVisualStyleBackColor = true;
+            this.ButtonInput.Font = new System.Drawing.Font("굴림", 16F);
+            this.ButtonInput.Location = new System.Drawing.Point(282, 20);
+            this.ButtonInput.Name = "ButtonInput";
+            this.ButtonInput.Size = new System.Drawing.Size(70, 58);
+            this.ButtonInput.TabIndex = 4;
+            this.ButtonInput.Text = "입력";
+            this.ButtonInput.UseVisualStyleBackColor = true;
             // 
-            // btnClear
+            // ButtonClear
             // 
-            this.btnClear.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            this.ButtonClear.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnClear.Font = new System.Drawing.Font("굴림", 12F);
-            this.btnClear.Location = new System.Drawing.Point(7, 494);
-            this.btnClear.Name = "btnClear";
-            this.btnClear.Size = new System.Drawing.Size(370, 31);
-            this.btnClear.TabIndex = 5;
-            this.btnClear.Text = "초기화";
-            this.btnClear.UseVisualStyleBackColor = true;
+            this.ButtonClear.Font = new System.Drawing.Font("굴림", 12F);
+            this.ButtonClear.Location = new System.Drawing.Point(7, 494);
+            this.ButtonClear.Name = "ButtonClear";
+            this.ButtonClear.Size = new System.Drawing.Size(370, 31);
+            this.ButtonClear.TabIndex = 5;
+            this.ButtonClear.Text = "초기화";
+            this.ButtonClear.UseVisualStyleBackColor = true;
             // 
-            // divider
+            // Divider
             // 
-            this.divider.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.divider.Location = new System.Drawing.Point(7, 97);
-            this.divider.Name = "divider";
-            this.divider.Size = new System.Drawing.Size(370, 2);
-            this.divider.TabIndex = 6;
+            this.Divider.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.Divider.Location = new System.Drawing.Point(7, 97);
+            this.Divider.Name = "Divider";
+            this.Divider.Size = new System.Drawing.Size(370, 2);
+            this.Divider.TabIndex = 6;
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(384, 531);
-            this.Controls.Add(this.divider);
-            this.Controls.Add(this.btnClear);
-            this.Controls.Add(this.btnInput);
-            this.Controls.Add(this.textBox4);
-            this.Controls.Add(this.textBox3);
-            this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.Divider);
+            this.Controls.Add(this.ButtonClear);
+            this.Controls.Add(this.ButtonInput);
+            this.Controls.Add(this.TextBox4);
+            this.Controls.Add(this.TextBox3);
+            this.Controls.Add(this.TextBox2);
+            this.Controls.Add(this.TextBox1);
             this.Name = "Form1";
             this.Text = "숫자 야구 게임";
             this.ResumeLayout(false);
@@ -148,13 +152,13 @@
 
         #endregion
 
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.TextBox textBox4;
-        private System.Windows.Forms.Button btnInput;
-        private System.Windows.Forms.Button btnClear;
-        private System.Windows.Forms.Label divider;
+        private System.Windows.Forms.TextBox TextBox1;
+        private System.Windows.Forms.TextBox TextBox2;
+        private System.Windows.Forms.TextBox TextBox3;
+        private System.Windows.Forms.TextBox TextBox4;
+        private System.Windows.Forms.Button ButtonInput;
+        private System.Windows.Forms.Button ButtonClear;
+        private System.Windows.Forms.Label Divider;
     }
 }
 

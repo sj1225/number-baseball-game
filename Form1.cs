@@ -16,5 +16,25 @@ namespace number_baseball_game
         {
             InitializeComponent();
         }
+
+        private void TextBox1_TextChanged(object sender, EventArgs e)
+        {
+            TextBox2.Focus();
+        }
+
+        private void TextBox2_TextChanged(object sender, EventArgs e)
+        {
+            TextBox3.Focus();
+        }
+
+        private void TextBox3_TextChanged(object sender, EventArgs e)
+        {
+            TextBox4.Focus();
+        }
+
+        private void TextBox4_TextChanged(object sender, EventArgs e)
+        {
+            ButtonInput.Focus();
+        }
     }
 }
