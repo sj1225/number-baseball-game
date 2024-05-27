@@ -15,6 +15,27 @@ namespace number_baseball_game
         public Form1()
         {
             InitializeComponent();
+            Init();
+        }
+
+        private void Init()
+        {
+            // 4자리 난수 만들기
+            List<int> numbers = new List<int>();
+
+            Random random = new Random();
+
+            numbers.Add(random.Next(1, 10));
+
+            while (numbers.Count < 4)
+            {
+                int r = random.Next(0, 10);
+                
+                if (numbers.Find(x => x == r) == 0)
+                {
+                    numbers.Add(r);
+                }
+            }
         }
 
         private void TextBox1_TextChanged(object sender, EventArgs e)
