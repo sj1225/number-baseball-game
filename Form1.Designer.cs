@@ -109,6 +109,8 @@
             this.ButtonInput.TabIndex = 4;
             this.ButtonInput.Text = "입력";
             this.ButtonInput.UseVisualStyleBackColor = true;
+            this.ButtonInput.Click += new System.EventHandler(this.ButtonInput_Click);
+            this.ButtonInput.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.ButtonInput_KeyPress);
             // 
             // ButtonClear
             // 
