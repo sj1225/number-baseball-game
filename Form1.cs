@@ -4,6 +4,7 @@ using System.ComponentModel;
 using System.Data;
 using System.Drawing;
 using System.Linq;
+using System.Reflection.Emit;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
@@ -33,6 +34,7 @@ namespace number_baseball_game
             TextBox2.Text = "";
             TextBox3.Text = "";
             TextBox4.Text = "";
+            label2.Text = "";
             TextBox1.Focus();
             label1.Text = "4자리 숫자를 입력해주세요.";
 
@@ -53,6 +55,11 @@ namespace number_baseball_game
                     numbers.Add(r);
                 }
             }
+            Console.WriteLine("numbers>>>");
+            Console.WriteLine(numbers[0]);
+            Console.WriteLine(numbers[1]);
+            Console.WriteLine(numbers[2]);
+            Console.WriteLine(numbers[3]);
         }
 
         private void TextBox1_TextChanged(object sender, EventArgs e)
@@ -120,11 +127,16 @@ namespace number_baseball_game
                     int.Parse(text4)
                 };
 
-                if (numbers.Equals(input))
+                if ((numbers[0] == input[0]) && (numbers[1] == input[1]) && (numbers[2] == input[2]) && (numbers[3] == input[3]))
                 {
                     // 정답
                     Console.WriteLine(">>> Correct!!!");
                     label1.Text = "정답입니다!!!";
+                    TextBox1.Enabled = false;
+                    TextBox2.Enabled = false;
+                    TextBox3.Enabled = false;
+                    TextBox4.Enabled = false;
+                    ButtonInput.Enabled = false;
                 }
                 else
                 {
@@ -157,7 +169,11 @@ namespace number_baseball_game
                     output.Add(result);
                     count++;
 
-                    if(count == 10)
+                    label2.Text = count + "회 " + input[0] + "" + input[1] + "" + input[2] + "" + input[3] + " "
+                                + result[0] + "S " + result[1] + "B " + result[2] + "O" + "\n"
+                        + label2.Text;
+
+                    if (count == 10)
                     {
                         // 게임 종료
                         Console.WriteLine(">>> You Lose...");
