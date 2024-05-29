@@ -19,9 +19,27 @@ namespace number_baseball_game
         }
 
         List<int> numbers = new List<int>();
+        List<List<int>> output = new List<List<int>>();
+        int count = 0;
 
         private void Init()
         {
+            TextBox1.Enabled = true;
+            TextBox2.Enabled = true;
+            TextBox3.Enabled = true;
+            TextBox4.Enabled = true;
+            ButtonInput.Enabled = true;
+            TextBox1.Text = "";
+            TextBox2.Text = "";
+            TextBox3.Text = "";
+            TextBox4.Text = "";
+            TextBox1.Focus();
+            label1.Text = "4자리 숫자를 입력해주세요.";
+
+            numbers.Clear();
+            output.Clear();
+            count = 0;
+
             Random random = new Random();
 
             numbers.Add(random.Next(1, 10));
@@ -88,6 +106,7 @@ namespace number_baseball_game
             {
                 // 입력되지 않은 값이 있음
                 Console.WriteLine(">> Input Error!!!");
+                label1.Text = "입력한 값이 올바르지 않습니다.";
             }
             else
             {
@@ -105,17 +124,66 @@ namespace number_baseball_game
                 {
                     // 정답
                     Console.WriteLine(">>> Correct!!!");
+                    label1.Text = "정답입니다!!!";
                 }
                 else
                 {
-                    Console.WriteLine(">>> Wrong...");
-                    TextBox1.Text = "";
-                    TextBox2.Text = "";
-                    TextBox3.Text = "";
-                    TextBox4.Text = "";
-                    TextBox1.Focus();
+                    List<int> result = new List<int>
+                    {
+                        0, 0, 0
+                    }; // S B O
+
+                    for (int i = 0; i < 4; i++)
+                    {
+                        if (input[i] == numbers[i])
+                        {
+                            result[0]++;
+                        }
+                        else if (numbers.Count(n => n == input[i]) > 0)
+                        {
+                            result[1]++;
+                        }
+                        else
+                        {
+                            result[2]++;
+                        }
+                    }
+
+                    Console.WriteLine(">>> Result");
+                    Console.WriteLine(result[0]);
+                    Console.WriteLine(result[1]);
+                    Console.WriteLine(result[2]);
+
+                    output.Add(result);
+                    count++;
+
+                    if(count == 10)
+                    {
+                        // 게임 종료
+                        Console.WriteLine(">>> You Lose...");
+                        TextBox1.Enabled = false;
+                        TextBox2.Enabled = false;
+                        TextBox3.Enabled = false;
+                        TextBox4.Enabled = false;
+                        ButtonInput.Enabled = false;
+                        label1.Text = "게임이 종료되었습니다.";
+                    } else
+                    {
+                        Console.WriteLine(">>> Wrong...");
+                        TextBox1.Text = "";
+                        TextBox2.Text = "";
+                        TextBox3.Text = "";
+                        TextBox4.Text = "";
+                        TextBox1.Focus();
+                        label1.Text = "틀렸습니다. 다시 입력하세요.";
+                    }
                 }
             }
+        }
+
+        private void ButtonClear_Click(object sender, EventArgs e)
+        {
+            Init();
         }
     }
 }

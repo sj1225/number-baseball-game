@@ -35,6 +35,7 @@
             this.ButtonInput = new System.Windows.Forms.Button();
             this.ButtonClear = new System.Windows.Forms.Button();
             this.Divider = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // TextBox1
@@ -43,7 +44,7 @@
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.TextBox1.Font = new System.Drawing.Font("굴림", 33F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))));
-            this.TextBox1.Location = new System.Drawing.Point(36, 20);
+            this.TextBox1.Location = new System.Drawing.Point(36, 40);
             this.TextBox1.Margin = new System.Windows.Forms.Padding(1);
             this.TextBox1.MaxLength = 1;
             this.TextBox1.Name = "TextBox1";
@@ -58,7 +59,7 @@
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.TextBox2.Font = new System.Drawing.Font("굴림", 33F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))));
-            this.TextBox2.Location = new System.Drawing.Point(97, 20);
+            this.TextBox2.Location = new System.Drawing.Point(97, 40);
             this.TextBox2.Margin = new System.Windows.Forms.Padding(1);
             this.TextBox2.MaxLength = 1;
             this.TextBox2.Name = "TextBox2";
@@ -73,7 +74,7 @@
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.TextBox3.Font = new System.Drawing.Font("굴림", 33F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))));
-            this.TextBox3.Location = new System.Drawing.Point(158, 20);
+            this.TextBox3.Location = new System.Drawing.Point(158, 40);
             this.TextBox3.Margin = new System.Windows.Forms.Padding(1);
             this.TextBox3.MaxLength = 1;
             this.TextBox3.Name = "TextBox3";
@@ -88,7 +89,7 @@
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.TextBox4.Font = new System.Drawing.Font("굴림", 33F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))));
-            this.TextBox4.Location = new System.Drawing.Point(219, 20);
+            this.TextBox4.Location = new System.Drawing.Point(219, 40);
             this.TextBox4.Margin = new System.Windows.Forms.Padding(1);
             this.TextBox4.MaxLength = 1;
             this.TextBox4.Name = "TextBox4";
@@ -103,7 +104,7 @@
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.ButtonInput.Font = new System.Drawing.Font("굴림", 16F);
-            this.ButtonInput.Location = new System.Drawing.Point(282, 20);
+            this.ButtonInput.Location = new System.Drawing.Point(282, 40);
             this.ButtonInput.Name = "ButtonInput";
             this.ButtonInput.Size = new System.Drawing.Size(70, 58);
             this.ButtonInput.TabIndex = 4;
@@ -124,20 +125,31 @@
             this.ButtonClear.TabIndex = 5;
             this.ButtonClear.Text = "초기화";
             this.ButtonClear.UseVisualStyleBackColor = true;
+            this.ButtonClear.Click += new System.EventHandler(this.ButtonClear_Click);
             // 
             // Divider
             // 
             this.Divider.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.Divider.Location = new System.Drawing.Point(7, 97);
+            this.Divider.Location = new System.Drawing.Point(7, 117);
             this.Divider.Name = "Divider";
             this.Divider.Size = new System.Drawing.Size(370, 2);
             this.Divider.TabIndex = 6;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(115, 15);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(155, 12);
+            this.label1.TabIndex = 7;
+            this.label1.Text = "4자리 숫자를 입력해주세요.";
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(384, 531);
+            this.Controls.Add(this.label1);
             this.Controls.Add(this.Divider);
             this.Controls.Add(this.ButtonClear);
             this.Controls.Add(this.ButtonInput);
@@ -161,6 +173,7 @@
         private System.Windows.Forms.Button ButtonInput;
         private System.Windows.Forms.Button ButtonClear;
         private System.Windows.Forms.Label Divider;
+        private System.Windows.Forms.Label label1;
     }
 }
 
