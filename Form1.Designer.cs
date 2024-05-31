@@ -35,8 +35,8 @@
             this.ButtonInput = new System.Windows.Forms.Button();
             this.ButtonClear = new System.Windows.Forms.Button();
             this.Divider = new System.Windows.Forms.Label();
-            this.label1 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
+            this.lbInform = new System.Windows.Forms.Label();
+            this.lbResults = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // TextBox1
@@ -138,28 +138,28 @@
             // 
             // label1
             // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(115, 15);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(155, 12);
-            this.label1.TabIndex = 7;
-            this.label1.Text = "4자리 숫자를 입력해주세요.";
+            this.lbInform.AutoSize = true;
+            this.lbInform.Location = new System.Drawing.Point(115, 15);
+            this.lbInform.Name = "label1";
+            this.lbInform.Size = new System.Drawing.Size(155, 12);
+            this.lbInform.TabIndex = 7;
+            this.lbInform.Text = "4자리 숫자를 입력해주세요.";
             // 
             // label2
             // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(34, 129);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(0, 12);
-            this.label2.TabIndex = 8;
+            this.lbResults.AutoSize = true;
+            this.lbResults.Location = new System.Drawing.Point(34, 129);
+            this.lbResults.Name = "label2";
+            this.lbResults.Size = new System.Drawing.Size(0, 12);
+            this.lbResults.TabIndex = 8;
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(384, 531);
-            this.Controls.Add(this.label2);
-            this.Controls.Add(this.label1);
+            this.Controls.Add(this.lbResults);
+            this.Controls.Add(this.lbInform);
             this.Controls.Add(this.Divider);
             this.Controls.Add(this.ButtonClear);
             this.Controls.Add(this.ButtonInput);
@@ -183,8 +183,8 @@
         private System.Windows.Forms.Button ButtonInput;
         private System.Windows.Forms.Button ButtonClear;
         private System.Windows.Forms.Label Divider;
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label lbInform;
+        private System.Windows.Forms.Label lbResults;
     }
 }
 
