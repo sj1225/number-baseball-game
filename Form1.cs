@@ -121,7 +121,7 @@ namespace number_baseball_game
 
                     if (count == 20)
                     {
-                        lbInform.Text = "게임이 종료되었습니다.";
+                        lbInform.Text = "정답은 " + answer[0] + answer[1] + answer[2] + answer[3] + "입니다.";
                         TextBox1.Enabled = false;
                         TextBox2.Enabled = false;
                         TextBox3.Enabled = false;
