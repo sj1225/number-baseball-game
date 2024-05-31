@@ -181,7 +181,9 @@
             this.Controls.Add(this.TextBox3);
             this.Controls.Add(this.TextBox2);
             this.Controls.Add(this.TextBox1);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Name = "Form1";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "숫자 야구 게임";
             this.ResumeLayout(false);
             this.PerformLayout();
