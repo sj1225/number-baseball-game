@@ -16,6 +16,7 @@ namespace number_baseball_game
         public Form1()
         {
             InitializeComponent();
+            this.MaximizeBox = false;
             InitializeGame();
         }
 
