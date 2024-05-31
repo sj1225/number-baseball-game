@@ -37,6 +37,7 @@
             this.Divider = new System.Windows.Forms.Label();
             this.lbInform = new System.Windows.Forms.Label();
             this.lbResults = new System.Windows.Forms.Label();
+            this.ButtonRule = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // TextBox1
@@ -155,11 +156,22 @@
             this.lbResults.Size = new System.Drawing.Size(360, 347);
             this.lbResults.TabIndex = 8;
             // 
+            // ButtonRule
+            // 
+            this.ButtonRule.Location = new System.Drawing.Point(325, 10);
+            this.ButtonRule.Name = "ButtonRule";
+            this.ButtonRule.Size = new System.Drawing.Size(27, 27);
+            this.ButtonRule.TabIndex = 9;
+            this.ButtonRule.Text = "?";
+            this.ButtonRule.UseVisualStyleBackColor = true;
+            this.ButtonRule.Click += new System.EventHandler(this.ButtonRule_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(384, 531);
+            this.Controls.Add(this.ButtonRule);
             this.Controls.Add(this.lbResults);
             this.Controls.Add(this.lbInform);
             this.Controls.Add(this.Divider);
@@ -187,6 +199,7 @@
         private System.Windows.Forms.Label Divider;
         private System.Windows.Forms.Label lbInform;
         private System.Windows.Forms.Label lbResults;
+        private System.Windows.Forms.Button ButtonRule;
     }
 }
 

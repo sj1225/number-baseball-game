@@ -174,5 +174,11 @@ namespace number_baseball_game
         {
             InitializeGame();
         }
+
+        private void ButtonRule_Click(object sender, EventArgs e)
+        {
+            Form2 form2 = new Form2();
+            form2.ShowDialog();
+        }
     }
 }
