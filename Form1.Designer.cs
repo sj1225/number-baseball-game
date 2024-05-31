@@ -124,7 +124,7 @@
             this.ButtonClear.Name = "ButtonClear";
             this.ButtonClear.Size = new System.Drawing.Size(370, 31);
             this.ButtonClear.TabIndex = 5;
-            this.ButtonClear.Text = "초기화";
+            this.ButtonClear.Text = "새게임";
             this.ButtonClear.UseVisualStyleBackColor = true;
             this.ButtonClear.Click += new System.EventHandler(this.ButtonClear_Click);
             // 
