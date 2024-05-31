@@ -64,22 +64,22 @@ namespace number_baseball_game
 
         private void TextBox1_TextChanged(object sender, EventArgs e)
         {
-            TextBox2.Focus();
+            if(TextBox1.Text.Length == 1) TextBox2.Focus();
         }
 
         private void TextBox2_TextChanged(object sender, EventArgs e)
         {
-            TextBox3.Focus();
+            if (TextBox2.Text.Length == 1) TextBox3.Focus();
         }
 
         private void TextBox3_TextChanged(object sender, EventArgs e)
         {
-            TextBox4.Focus();
+            if (TextBox3.Text.Length == 1) TextBox4.Focus();
         }
 
         private void TextBox4_TextChanged(object sender, EventArgs e)
         {
-            ButtonInput.Focus();
+            if (TextBox4.Text.Length == 1) ButtonInput.Focus();
         }
 
         private void ButtonInput_OnEvene(object sender, EventArgs e)
@@ -173,7 +173,7 @@ namespace number_baseball_game
                                 + result[0] + "S " + result[1] + "B " + result[2] + "O" + "\n"
                         + label2.Text;
 
-                    if (count == 10)
+                    if (count == 20)
                     {
                         // 게임 종료
                         Console.WriteLine(">>> You Lose...");
