@@ -83,7 +83,7 @@ namespace number_baseball_game
 
                 if ((answer[0] == input[0]) && (answer[1] == input[1]) && (answer[2] == input[2]) && (answer[3] == input[3]))
                 {
-                    lbInform.Text = "정답입니다!!!";
+                    lbInform.Text = "★★★정답입니다!!!★★★";
                     TextBox1.Enabled = false;
                     TextBox2.Enabled = false;
                     TextBox3.Enabled = false;
