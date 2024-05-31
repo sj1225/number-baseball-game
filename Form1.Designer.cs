@@ -46,7 +46,7 @@
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.TextBox1.Font = new System.Drawing.Font("굴림", 33F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))));
-            this.TextBox1.Location = new System.Drawing.Point(36, 44);
+            this.TextBox1.Location = new System.Drawing.Point(36, 45);
             this.TextBox1.Margin = new System.Windows.Forms.Padding(1);
             this.TextBox1.MaxLength = 1;
             this.TextBox1.Name = "TextBox1";
@@ -61,7 +61,7 @@
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.TextBox2.Font = new System.Drawing.Font("굴림", 33F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))));
-            this.TextBox2.Location = new System.Drawing.Point(97, 44);
+            this.TextBox2.Location = new System.Drawing.Point(97, 45);
             this.TextBox2.Margin = new System.Windows.Forms.Padding(1);
             this.TextBox2.MaxLength = 1;
             this.TextBox2.Name = "TextBox2";
@@ -76,7 +76,7 @@
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.TextBox3.Font = new System.Drawing.Font("굴림", 33F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))));
-            this.TextBox3.Location = new System.Drawing.Point(158, 44);
+            this.TextBox3.Location = new System.Drawing.Point(158, 45);
             this.TextBox3.Margin = new System.Windows.Forms.Padding(1);
             this.TextBox3.MaxLength = 1;
             this.TextBox3.Name = "TextBox3";
@@ -91,7 +91,7 @@
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.TextBox4.Font = new System.Drawing.Font("굴림", 33F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))));
-            this.TextBox4.Location = new System.Drawing.Point(219, 44);
+            this.TextBox4.Location = new System.Drawing.Point(219, 45);
             this.TextBox4.Margin = new System.Windows.Forms.Padding(1);
             this.TextBox4.MaxLength = 1;
             this.TextBox4.Name = "TextBox4";
@@ -102,11 +102,8 @@
             // 
             // ButtonInput
             // 
-            this.ButtonInput.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
             this.ButtonInput.Font = new System.Drawing.Font("굴림", 16F);
-            this.ButtonInput.Location = new System.Drawing.Point(282, 44);
+            this.ButtonInput.Location = new System.Drawing.Point(282, 45);
             this.ButtonInput.Name = "ButtonInput";
             this.ButtonInput.Size = new System.Drawing.Size(70, 58);
             this.ButtonInput.TabIndex = 4;
@@ -117,13 +114,10 @@
             // 
             // ButtonClear
             // 
-            this.ButtonClear.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
             this.ButtonClear.Font = new System.Drawing.Font("굴림", 12F);
-            this.ButtonClear.Location = new System.Drawing.Point(7, 492);
+            this.ButtonClear.Location = new System.Drawing.Point(12, 304);
             this.ButtonClear.Name = "ButtonClear";
-            this.ButtonClear.Size = new System.Drawing.Size(370, 31);
+            this.ButtonClear.Size = new System.Drawing.Size(360, 31);
             this.ButtonClear.TabIndex = 5;
             this.ButtonClear.Text = "새게임";
             this.ButtonClear.UseVisualStyleBackColor = true;
@@ -132,17 +126,17 @@
             // Divider
             // 
             this.Divider.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.Divider.Location = new System.Drawing.Point(7, 117);
+            this.Divider.Location = new System.Drawing.Point(12, 114);
             this.Divider.Name = "Divider";
-            this.Divider.Size = new System.Drawing.Size(370, 2);
+            this.Divider.Size = new System.Drawing.Size(360, 1);
             this.Divider.TabIndex = 6;
             // 
             // lbInform
             // 
             this.lbInform.Font = new System.Drawing.Font("굴림", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.lbInform.Location = new System.Drawing.Point(33, 10);
+            this.lbInform.Location = new System.Drawing.Point(36, 10);
             this.lbInform.Name = "lbInform";
-            this.lbInform.Size = new System.Drawing.Size(319, 28);
+            this.lbInform.Size = new System.Drawing.Size(316, 27);
             this.lbInform.TabIndex = 7;
             this.lbInform.Text = "4자리 숫자를 입력해주세요.";
             this.lbInform.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -151,10 +145,11 @@
             // 
             this.lbResults.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.lbResults.Font = new System.Drawing.Font("굴림", 12F);
-            this.lbResults.Location = new System.Drawing.Point(12, 132);
+            this.lbResults.Location = new System.Drawing.Point(12, 127);
             this.lbResults.Name = "lbResults";
-            this.lbResults.Size = new System.Drawing.Size(360, 347);
+            this.lbResults.Size = new System.Drawing.Size(360, 170);
             this.lbResults.TabIndex = 8;
+            this.lbResults.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
             // ButtonRule
             // 
@@ -170,7 +165,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(384, 531);
+            this.ClientSize = new System.Drawing.Size(384, 342);
             this.Controls.Add(this.ButtonRule);
             this.Controls.Add(this.lbResults);
             this.Controls.Add(this.lbInform);

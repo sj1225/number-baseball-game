@@ -119,7 +119,7 @@ namespace number_baseball_game
                                 + result[0] + "S " + result[1] + "B " + result[2] + "O" + "\n"
                         + lbResults.Text;
 
-                    if (count == 20)
+                    if (count == 10)
                     {
                         lbInform.Text = "정답은 " + answer[0] + answer[1] + answer[2] + answer[3] + "입니다.";
                         TextBox1.Enabled = false;
